@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das cartas
+// Tema 2 - Cadastro das cartas
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
 int main() {
@@ -14,6 +14,8 @@ int main() {
   float area1;
   float pib1;
   int pontosturisticos1;
+  float densidadepop1;
+  float pibpercapita1;
   //Variáveis Carta 2:
   char estado2;
   char codigo2[20];
@@ -22,6 +24,8 @@ int main() {
   float area2;
   float pib2;
   int pontosturisticos2;
+  float densidadepop2;
+  float pibpercapita2;
 
   // Área para entrada de dados
   //Mensagem incial
@@ -64,6 +68,13 @@ int main() {
   scanf("%d",&pontosturisticos2);
   printf("\n");
 
+  //Processamento de dados
+  densidadepop1 = populacao1/area1;
+  pibpercapita1 = (pib1*1000000000)/populacao1;
+
+  densidadepop2 = populacao2/area2;
+  pibpercapita2 = (pib2*1000000000)/populacao2;
+
   // Área para exibição dos dados da cidade
   //Mensagem incial
   printf("Esse são os dados confirmados de cada carta:\n");
@@ -74,10 +85,12 @@ int main() {
   printf("Estado: %c\n",estado1);
   printf("Código: %s\n",codigo1);
   printf("Cidade: %s\n",cidade1);
-  printf("População: %d\n",populacao1);
+  printf("População: %d hab\n",populacao1);
   printf("Área: %f km²\n",area1);
   printf("PIB: %f bilhões de reais\n",pib1);
-  printf("Número de pontos turísticos: %i\n",pontosturisticos1);
+  printf("Número de pontos turísticos: %d\n",pontosturisticos1);
+  printf("Densidade Populacional: %f hab/km²\n",densidadepop1);
+  printf("PIB per Capita: %f\n",pibpercapita1);
   printf("\n");
 
   //Resultado Carta 2:
@@ -85,10 +98,12 @@ int main() {
   printf("Estado: %c\n",estado2);
   printf("Código: %s\n",codigo2);
   printf("Cidade: %s\n",cidade2);
-  printf("População: %d\n",populacao2);
+  printf("População: %d hab\n",populacao2);
   printf("Área: %f  km²\n",area2);
   printf("PIB: %f bilhões de reais\n",pib2);
-  printf("Número de pontos turísticos: %i\n",pontosturisticos2);
+  printf("Número de pontos turísticos: %d\n",pontosturisticos2);
+  printf("Densidade Populacional: %f hab/km²\n",densidadepop2);
+  printf("PIB per Capita: %f\n",pibpercapita2);
   printf("\n");
 
   //Mensagem final
