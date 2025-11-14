@@ -90,7 +90,7 @@ int main() {
   printf("PIB: %f bilhões de reais\n",pib1);
   printf("Número de pontos turísticos: %d\n",pontosturisticos1);
   printf("Densidade Populacional: %f hab/km²\n",densidadepop1);
-  printf("PIB per Capita: %f\n",pibpercapita1);
+  printf("PIB per Capita: %f reais\n",pibpercapita1);
   printf("\n");
 
   //Resultado Carta 2:
@@ -103,7 +103,7 @@ int main() {
   printf("PIB: %f bilhões de reais\n",pib2);
   printf("Número de pontos turísticos: %d\n",pontosturisticos2);
   printf("Densidade Populacional: %f hab/km²\n",densidadepop2);
-  printf("PIB per Capita: %f\n",pibpercapita2);
+  printf("PIB per Capita: %f reais\n",pibpercapita2);
   printf("\n");
 
   //Mensagem final
